@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#carli
+sudo chgrp -R root airootfs/
+sudo chown -R root airootfs/
 set -e -u
 
 iso_name=archlinux
@@ -12,7 +15,7 @@ work_dir=work
 out_dir=out
 gpg_key=
 
-#Change to verbose
+#carli
 verbose="-v"
 script_path=$(readlink -f ${0%/*})
 
